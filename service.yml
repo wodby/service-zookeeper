@@ -1,0 +1,27 @@
+name: zookeeper
+icon: zookeeper
+type: memory
+title: ZooKeeper
+hostname: zookeeper
+containers:
+- name: zookeeper
+  image: zookeeper
+  ports:
+  - name: zookeeper
+    number: 2181
+    type: tcp
+options:
+- version: '3.9'
+scalable: false
+labels:
+- zookeeper
+
+volumes:
+- name: data
+  title: Data
+  path: /data
+  size: 5
+- name: datalog
+  title: Transaction log
+  path: /datalog
+  size: 5
