@@ -16,6 +16,15 @@ scalable: false
 labels:
 - zookeeper
 
+links: 
+- name: operator
+  title: ZooKeeper operator
+  required: true
+  selectors:
+  - type: operator
+    labels:
+    - zookeeper-operator
+
 helm:
   name: pravega
   source: https://charts.pravega.io
