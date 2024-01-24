@@ -16,6 +16,11 @@ scalable: false
 labels:
 - zookeeper
 
+helm:
+  name: pravega
+  source: https://charts.pravega.io
+  chart: pravega/zookeeper
+
 volumes:
 - name: data
   title: Data
