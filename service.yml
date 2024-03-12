@@ -1,6 +1,6 @@
 name: zookeeper
 icon: zookeeper
-type: memory
+type: datastore
 title: ZooKeeper
 hostname: zookeeper
 containers:
