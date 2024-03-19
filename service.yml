@@ -29,6 +29,7 @@ helm:
   name: pravega
   source: https://charts.pravega.io
   chart: pravega/zookeeper
+  version: 0.2.15
 
 volumes:
 - name: data
