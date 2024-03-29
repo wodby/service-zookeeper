@@ -15,7 +15,11 @@ options:
 scalable: false
 labels:
 - zookeeper
-operator: zookeeper-operator
+
+kubernetes:
+  infrastructure:
+  - name: operator
+    service: zookeeper-operator
 
 helm:
   name: pravega
