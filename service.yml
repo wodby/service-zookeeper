@@ -19,6 +19,7 @@ labels:
 kubernetes:
   infrastructure:
   - name: operator
+    title: ZooKeeper Operator
     service: zookeeper-operator
 
 helm:
