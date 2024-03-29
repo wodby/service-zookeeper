@@ -17,6 +17,7 @@ labels:
 - zookeeper
 operators:
 - name: operator
+  title: Zookeeper Operator
   service: zookeeper-operator
 
 helm:
