@@ -15,10 +15,7 @@ options:
 scalable: false
 labels:
 - zookeeper
-operators:
-- name: operator
-  title: Zookeeper Operator
-  service: zookeeper-operator
+operator: zookeeper-operator
 
 helm:
   name: pravega
