@@ -21,6 +21,7 @@ kubernetes:
   - name: operator
     title: ZooKeeper Operator
     service: zookeeper-operator
+    version: '3.9'
 
 helm:
   name: pravega
