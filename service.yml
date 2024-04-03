@@ -24,10 +24,10 @@ kubernetes:
     version: '3.9'
 
 helm:
-  name: pravega
-  source: https://charts.pravega.io
-  chart: pravega/zookeeper
-  version: 0.2.15
+  name: bitnamicharts
+  source: oci://registry-1.docker.io/bitnamicharts/zookeeper
+  chart: bitnami/zookeeper
+  version: 13.1.0
 
 volumes:
 - name: data
