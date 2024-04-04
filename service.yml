@@ -16,13 +16,6 @@ scalable: false
 labels:
 - zookeeper
 
-kubernetes:
-  infrastructure:
-  - name: operator
-    title: ZooKeeper Operator
-    service: zookeeper-operator
-    version: '3.9'
-
 helm:
   name: bitnamicharts
   source: oci://registry-1.docker.io/bitnamicharts/zookeeper
