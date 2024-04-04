@@ -18,6 +18,7 @@ labels:
 
 helm:
   name: bitnamicharts
+  source: oci://registry-1.docker.io/bitnamicharts/zookeeper
   chart: oci://registry-1.docker.io/bitnamicharts/zookeeper
   version: 13.1.0
 
