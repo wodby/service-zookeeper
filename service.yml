@@ -12,7 +12,6 @@ containers:
     type: tcp
 options:
 - version: '3.9'
-scalable: false
 labels:
 - zookeeper
 
@@ -25,9 +24,6 @@ helm:
 volumes:
 - name: data
   title: Data
-  path: /data
+  optional: true
   size: 5
-- name: datalog
-  title: Transaction log
-  path: /datalog
-  size: 5
+  path: /bitnami/zookeeper
