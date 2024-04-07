@@ -26,4 +26,9 @@ volumes:
   title: Data
   optional: true
   size: 5
-  path: /bitnami/zookeeper
+  helm:
+    values:
+    - name: persistence.enabled	
+      value: true
+    - name: persistence.size
+      value: {{volumes.data.size}}
