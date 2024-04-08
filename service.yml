@@ -31,4 +31,4 @@ volumes:
     - name: persistence.enabled	
       value: true
     - name: persistence.size
-      value: {{volumes.data.size}}Gi
+      value: '{{volumes.data.size}}Gi'
