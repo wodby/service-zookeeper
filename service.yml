@@ -32,5 +32,3 @@ volumes:
       value: true
     - name: persistence.size
       value: '{{volumes.data.size}}Gi'
-    - name: persistence.reclaimPolicy
-      value: Delete
