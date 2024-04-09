@@ -25,12 +25,11 @@ volumes:
 - name: data
   title: Data
   optional: true
-  size: 5
+  size: 5  
   helm:
+    labels: persistence.labels
     values:
     - name: persistence.enabled	
       value: true
     - name: persistence.size
       value: '{{volumes.data.size}}Gi'
-    - name: persistence.labels
-      value: '{{volumes.data.labels}}'
