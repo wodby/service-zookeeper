@@ -32,3 +32,5 @@ volumes:
       value: true
     - name: persistence.size
       value: '{{volumes.data.size}}Gi'
+    - name: persistence.labels
+      value: '{{volumes.data.labels}}'
