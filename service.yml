@@ -26,12 +26,6 @@ volumes:
   title: Data
   optional: true
   size: 5
-  configurations:
-  - name: zookeeper
-    annotations: commonAnnotations
-    labels: commonLabels
-    env: extraEnvVars
-    resources: resources
   helm:
     labels: persistence.labels
     values:
