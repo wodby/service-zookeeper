@@ -30,6 +30,9 @@ helm:
     annotations: commonAnnotations
     env: extraEnvVars
     resources: resources
+  values:
+    - name: resourcesPreset
+      value: 'none'  
 
 volumes:
 - name: data
@@ -43,5 +46,3 @@ volumes:
       value: true
     - name: persistence.size
       value: '{{volumes.data.size}}Gi'
-    - name: resourcesPreset
-      value: 'none'
