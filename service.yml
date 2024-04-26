@@ -31,8 +31,8 @@ helm:
     env: extraEnvVars
     resources: resources
   values:
-    - name: resourcesPreset
-      value: 'none'  
+  - name: resourcesPreset
+    value: 'none'  
 
 volumes:
 - name: data
