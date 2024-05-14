@@ -9,7 +9,7 @@ containers:
   env:
   - name: DISABLE_WELCOME_MESSAGE
     value: 'true'  
-routes:
+endpoints:
 - name: zookeeper
   ports:
   - name: zookeeper
