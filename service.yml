@@ -6,13 +6,15 @@ hostname: zookeeper
 containers:
 - name: zookeeper
   image: bitnami/zookeeper
+  env:
+  - name: DISABLE_WELCOME_MESSAGE
+    value: 'true'  
+routes:
+- name: zookeeper
   ports:
   - name: zookeeper
     number: 2181
     type: tcp
-  env:
-  - name: DISABLE_WELCOME_MESSAGE
-    value: 'true'  
 options:
 - version: '3.9'
   tag: 3.9.2-debian-12-r2
