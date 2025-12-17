@@ -14,7 +14,7 @@ endpoints:
     type: tcp
 options:
 - version: '3.9'
-  tag: 3.9
+  tag: '3.9'
 labels:
 - zookeeper
 
