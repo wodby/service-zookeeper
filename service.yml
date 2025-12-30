@@ -11,7 +11,7 @@ endpoints:
   ports:
   - name: zookeeper
     number: 2181
-    type: tcp
+    protocol: tcp
 options:
 - version: '3.9'
   tag: '3.9'
