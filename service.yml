@@ -24,7 +24,7 @@ helm:
   chart: oci://registry-1.docker.io/wodby/zookeeper
   version: 0.1.0
   configurations:
-  - name: zookeeper
+  - container: zookeeper
     labels: commonLabels
     annotations: commonAnnotations
     env: extraEnvVars
@@ -41,7 +41,7 @@ volumes:
   helm:
     labels: persistence.labels
     values:
-    - name: persistence.enabled	
+    - name: persistence.enabled
       value: true
     - name: persistence.size
       value: '{{volumes.data.size}}Gi'
