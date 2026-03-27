@@ -29,6 +29,8 @@ helm:
     annotations: commonAnnotations
     env: extraEnvVars
     resources: resources
+    volumes: extraVolumes
+    mounts: extraVolumeMounts
   values:
   - name: resourcesPreset
     value: 'none'  
