@@ -2,9 +2,6 @@ name: zookeeper
 icon: zookeeper
 type: datastore
 title: ZooKeeper
-containers:
-- name: zookeeper
-  image: wodby/zookeeper
 endpoints:
 - name: zookeeper
   ports:
@@ -22,17 +19,9 @@ helm:
   source: oci://registry-1.docker.io/wodby/zookeeper
   chart: oci://registry-1.docker.io/wodby/zookeeper
   version: 0.1.0
-  configurations:
-  - container: zookeeper
-    labels: commonLabels
-    annotations: commonAnnotations
-    env: extraEnvVars
-    resources: resources
-    volumes: extraVolumes
-    mounts: extraVolumeMounts
   values:
   - name: resourcesPreset
-    value: 'none'  
+    value: 'none'
 
 volumes:
 - name: data
@@ -46,3 +35,18 @@ volumes:
       value: true
     - name: persistence.size
       value: '{{volumes.data.size}}Gi'
+workloads:
+- id: main
+  kind: statefulset
+  primary: true
+  containers:
+  - name: zookeeper
+    image: wodby/zookeeper
+    helm:
+      resources: resources
+      env: extraEnvVars
+      mounts: extraVolumeMounts
+  helm:
+    labels: commonLabels
+    annotations: commonAnnotations
+    volumes: extraVolumes
