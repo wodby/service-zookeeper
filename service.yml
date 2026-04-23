@@ -35,10 +35,15 @@ volumes:
       value: true
     - name: persistence.size
       value: '{{volumes.data.size}}Gi'
+
 workloads:
 - id: main
   kind: statefulset
   primary: true
+  helm:
+    labels: commonLabels
+    annotations: commonAnnotations
+    volumes: extraVolumes
   containers:
   - name: zookeeper
     image: wodby/zookeeper
@@ -46,7 +51,3 @@ workloads:
       resources: resources
       env: extraEnvVars
       mounts: extraVolumeMounts
-  helm:
-    labels: commonLabels
-    annotations: commonAnnotations
-    volumes: extraVolumes
