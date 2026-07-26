@@ -35,6 +35,8 @@ volumes:
       value: true
     - name: persistence.size
       value: '{{volumes.data.size}}Gi'
+    - name: persistence.storageClass
+      value: '{{volumes.data.storageClassName}}'
 
 workloads:
 - name: main
