@@ -52,6 +52,9 @@ workloads:
   containers:
   - name: zookeeper
     image: wodby/zookeeper
+    env:
+    - name: ZOO_DATA_LOG_DIR
+      value: /data/datalog
     helm:
       resources: resources
       env: extraEnvVars
