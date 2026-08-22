@@ -14,11 +14,16 @@ options:
 labels:
 - zookeeper
 
+deployment:
+  strategy: rolling
+  minReady: 10s
+  shutdownGracePeriod: 30s
+
 helm:
   name: wodby
   source: oci://registry-1.docker.io/wodby/zookeeper
   chart: oci://registry-1.docker.io/wodby/zookeeper
-  version: 0.1.0
+  version: 0.2.0
   values:
   - name: resourcesPreset
     value: 'none'
