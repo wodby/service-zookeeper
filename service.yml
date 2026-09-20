@@ -10,7 +10,7 @@ endpoints:
     protocol: tcp
 options:
 - version: '3.9'
-  tag: '3.9-0.1.7'
+  tag: 3.9-r0
 labels:
 - zookeeper
 
@@ -23,7 +23,7 @@ helm:
   name: wodby
   source: oci://registry-1.docker.io/wodby/zookeeper
   chart: oci://registry-1.docker.io/wodby/zookeeper
-  version: 0.2.1
+  version: 0.2.2
   values:
   - name: resourcesPreset
     value: 'none'

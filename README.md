@@ -26,7 +26,7 @@ configuration for ZooKeeper.
 | Containers | `zookeeper` using `wodby/zookeeper` |
 | Endpoints | `zookeeper`: TCP 2181 |
 | Volumes | Data, 5 GB |
-| Helm | chart `oci://registry-1.docker.io/wodby/zookeeper`; version `0.2.1` |
+| Helm | chart `oci://registry-1.docker.io/wodby/zookeeper`; version `0.2.2` |
 
 ## Use this service
 
