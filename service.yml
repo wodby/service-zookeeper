@@ -2,6 +2,7 @@ name: zookeeper
 icon: zookeeper
 type: datastore
 title: ZooKeeper
+guidance: GUIDANCE.md
 endpoints:
 - name: zookeeper
   ports:
