@@ -58,6 +58,12 @@ workloads:
   containers:
   - name: zookeeper
     image: wodby/zookeeper
+    resources:
+      request:
+        cpu: 20
+        memory: 96
+      limit:
+        memory: 2048
     env:
     - name: ZOO_DATA_LOG_DIR
       value: /data/datalog
