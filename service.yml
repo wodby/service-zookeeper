@@ -12,6 +12,7 @@ endpoints:
 options:
 - version: '3.9'
   tag: 3.9-r2
+  digest: sha256:5f3f4f960c9dcd2b2e8c95c2fcccf7670c9039976b7482e82de3d5fada5d1e45
 labels:
 - zookeeper
 
