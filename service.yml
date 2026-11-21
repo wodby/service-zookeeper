@@ -11,8 +11,8 @@ endpoints:
     protocol: tcp
 options:
 - version: '3.9'
-  tag: 3.9-r2
-  digest: sha256:5f3f4f960c9dcd2b2e8c95c2fcccf7670c9039976b7482e82de3d5fada5d1e45
+  tag: 3.9-r3
+  digest: sha256:346d2719e65f0ec7c887c35de6fe7b6532251ab1f18b470b07da8c7b1554d0fa
 labels:
 - zookeeper
 
